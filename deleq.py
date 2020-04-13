@@ -29,11 +29,11 @@ outcome = predictor.predict(X=X_TEST) # Predict the ouput of the test data using
 
 coefficients = predictor.coef_  #The estimated coefficients for the linear regression problem.
 
-ffggggg= open("\kvatzim_m_m\le_rezult.txt","w")
+ffggggg= open("/kvatzim_m_m/le_rezult.txt","w")
 ffggggg.write("this is the text version: {} \n Coefficients: {}".format(outcome, coefficients))
 ffggggg.close()
 print('Outcome: {} \n Coefficients: {}'.format(outcome, coefficients))
-f = open("\kvatzim_m_m\demofile2.txt", "a")
+f = open("/kvatzim_m_m/demofile2.txt", "a")
 f.write("Now the file has more content!")
 f.close()
-print('now the file should be here... just sayin. plus: this is the latest commit!')
+print('file should be here... this IS the latest commit!')
