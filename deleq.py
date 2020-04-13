@@ -31,4 +31,8 @@ coefficients = predictor.coef_  #The estimated coefficients for the linear regre
 
 print('Outcome: {} \n Coefficients: {}'.format(outcome, coefficients))
 f= open("le_rezult.txt","w+")
-f.write('this is the text version: {} \n Coefficients: {}'.format(outcome, coefficients))
+f.write("this is the text version: {} \n Coefficients: {}".format(outcome, coefficients))
+
+# text_file = open("Output.txt", "w")
+# text_file.write("Purchase Amount: %s" % TotalAmount)
+# text_file.close()
