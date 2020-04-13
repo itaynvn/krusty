@@ -29,10 +29,7 @@ outcome = predictor.predict(X=X_TEST) # Predict the ouput of the test data using
 
 coefficients = predictor.coef_  #The estimated coefficients for the linear regression problem.
 
-print('Outcome: {} \n Coefficients: {}'.format(outcome, coefficients))
-f= open("le_rezult.txt","w+")
+f= open("le_rezult.txt","w")
 f.write("this is the text version: {} \n Coefficients: {}".format(outcome, coefficients))
-
-# text_file = open("Output.txt", "w")
-# text_file.write("Purchase Amount: %s" % TotalAmount)
-# text_file.close()
+f.close()
+print('Outcome: {} \n Coefficients: {}'.format(outcome, coefficients))
